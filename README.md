@@ -11,7 +11,7 @@
 
 - ### Goals
 
-- ### Tech Stack
+- ### Technology Stack
 
 - ### Team Roles
     - #### DevOps Engineer
