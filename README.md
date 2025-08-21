@@ -23,8 +23,6 @@
     - createdDate
     - updatedDate
 
-    
-
   - #### Properties
     - propertyId
     - propertyId
@@ -32,7 +30,6 @@
     - userId
     - createdDate
     - updatedDate
-
 
   - #### Bookings
     - bookingsId
@@ -55,7 +52,6 @@
     - Bookingsid
     - createdDate
     - updatedDate
-
 
 
 - ### Team Roles
