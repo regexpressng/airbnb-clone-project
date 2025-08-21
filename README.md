@@ -14,7 +14,6 @@
 - ### Technology Stack
 
   ### Database Design
-
   - #### Users
     - userId
     - userName
