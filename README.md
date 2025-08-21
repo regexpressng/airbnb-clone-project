@@ -62,6 +62,7 @@ The goal is to simulate a real-world property rental system while practicing **b
 - `paymentId`  
 - `userId`  
 - `bookingId`  
+- `status`
 - `createdDate`  
 - `updatedDate`
 
