@@ -13,6 +13,8 @@
 
 - ### Technology Stack
 
+  ### Database Design
+
 - ### Team Roles
     - #### DevOps Engineer
     
