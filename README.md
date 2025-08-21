@@ -1,13 +1,6 @@
 # airbnb-clone-project
 
-
-
-
-
-
-
 ## Brief overview of the project
-
 
 - ### Goals
 
@@ -82,3 +75,7 @@
     6. #### Review System
 
     7. #### Database Optimizations
+    
+- ### API Security
+
+- ### CI/CD Pipeline
