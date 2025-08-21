@@ -1,98 +1,136 @@
-# airbnb-clone-project
+# Airbnb Clone Project
 
-## Brief overview of the project
+## Brief Overview of the Project
+This project is an **Airbnb clone** that provides core functionalities such as **user authentication, property listings, bookings, payments, and reviews**.  
+The goal is to simulate a real-world property rental system while practicing **backend system design, API development, and DevOps deployment pipelines**.
 
-- ### Goals
+---
 
-- ### Technology Stack
+### Goals
+- Build a **scalable property rental platform** similar to Airbnb.  
+- Implement **RESTful APIs** for authentication, property management, booking, payment, and reviews.  
+- Ensure **database optimization** for performance and scalability.  
+- Deploy the application with **CI/CD pipelines** for continuous integration and delivery.  
+- Provide **secure APIs** with authentication and authorization.
 
-  ### Database Design
-  - #### Users
-    - userId
-    - userName
-    - email
-    - phoneNumber
-    - propertiesId[]
-    - createdDate
-    - updatedDate
+---
 
-  - #### Properties
-    - propertyId
-    - propertyId
-    - location
-    - userId
-    - createdDate
-    - updatedDate
+### Technology Stack
+- **Backend Framework:** Node.js (Express / TSOA) or Python (Flask/Django)  
+- **Database:** PostgreSQL  
+- **Caching:** Redis (for session storage & caching queries)  
+- **Containerization & Deployment:** Docker, Kubernetes, DigitalOcean/AWS  
+- **CI/CD:** GitHub Actions / Jenkins  
+- **Testing:** Postman, Jest / Pytest  
+- **API Documentation:** Swagger / OpenAPI  
 
-  - #### Bookings
-    - bookingsId
-    - propertyId
-    - userId
-    - createdDate
-    - updatedDate
+---
 
-  - #### Reviews
-    - userId
-    - propertyId
-    - reviewId
-    - reviewMessage
-    - createdDate
-    - updatedDate
+### Database Design
+#### Users
+- `userId`  
+- `userName`  
+- `email`  
+- `phoneNumber`  
+- `propertiesId[]`  
+- `createdDate`  
+- `updatedDate`
 
-  - #### Payment
-    - paymentId
-    - Userid
-    - Bookingsid
-    - createdDate
-    - updatedDate
+#### Properties
+- `propertyId`  
+- `location`  
+- `userId`  
+- `createdDate`  
+- `updatedDate`
 
+#### Bookings
+- `bookingId`  
+- `propertyId`  
+- `userId`  
+- `createdDate`  
+- `updatedDate`
 
-- ### Team Roles
-    - #### DevOps Engineer
-        - The Devops engineer would be responsible for the deployment of the backend system and database to the cloud.
+#### Reviews
+- `reviewId`  
+- `userId`  
+- `propertyId`  
+- `reviewMessage`  
+- `createdDate`  
+- `updatedDate`
 
-    - #### Backend Engineer
-        - The Backend engineer manages the system logic, they design and code the core functionalities of the application.
+#### Payment
+- `paymentId`  
+- `userId`  
+- `bookingId`  
+- `createdDate`  
+- `updatedDate`
 
-    - #### QA Engineer
-        - The QA checks and ensures that the application meets the requirements required of it. Both the functional and non-functional requirements
+---
 
-    - #### Database Administrator
-        - The Database administrator designs and manages the database.
+### Team Roles
+#### DevOps Engineer
+Responsible for the **deployment of the backend system and database** to the cloud.
 
+#### Backend Engineer
+Manages the **system logic**, designs and codes the **core functionalities** of the application.
 
-- ### Feature Breakdown
-    1. #### API Documentation
-        - This helps with the documentation and navigation of the rest api's
+#### QA Engineer
+Ensures the application meets **functional and non-functional requirements** through **testing and validation**.
 
-    2. #### User Authentication
-        - The user Authentication is the api that manages user profiles, You can get, create, update and delete the user's profile.
+#### Database Administrator
+Designs and manages the **database schema, performance tuning, and optimizations**.
 
-    3. #### Property Management
-        - The Property Management is the api that manages property details, You can get, create, update and delete the property.
+---
 
-    4. #### Booking System
-         - The Booking System API manages property bookings.
-         - You can get, create, update, and delete booking arrangements.
+### Feature Breakdown
+1. #### API Documentation
+   - Provides navigation and usage of the REST APIs.
 
-    5. #### Payment Processing
-        - The Payment Processing API manages user payments and transactions.
-        - You can initiate payments, verify transactions, process refunds, and view payment history.
+2. #### User Authentication
+   - Manages user profiles.  
+   - You can **get, create, update, and delete** the user’s profile.  
 
-    6. #### Review System
-        - The Review System API manages reviews and ratings for properties.
-        - Users can add, edit, delete, and fetch reviews.
-        - Supports average rating calculations per property.
+3. #### Property Management
+   - Manages property details.  
+   - You can **get, create, update, and delete** properties.  
 
-    7. #### Database Optimizations
+4. #### Booking System
+   - Manages property bookings.  
+   - You can **get, create, update, and delete** booking arrangements.  
 
-        - Ensures the system is fast, scalable, and reliable.
-        - Includes:
-            - Indexing for frequent queries
-            - Caching (e.g., Redis) for repeated requests
-            - Partitioning/Sharding for large datasets
-            - Connection pooling to handle traffic efficiently
-    
-- ### API Security
+5. #### Payment Processing
+   - Manages user payments and transactions.  
+   - You can **initiate payments, verify transactions, process refunds, and view payment history**.  
 
-- ### CI/CD Pipeline
+6. #### Review System
+   - Manages reviews and ratings for properties.  
+   - Users can **add, edit, delete, and fetch reviews**.  
+   - Supports **average rating calculations** per property.  
+
+7. #### Database Optimizations
+   - Ensures the system is **fast, scalable, and reliable**.  
+   - Includes:  
+     - Indexing for frequent queries  
+     - Caching (e.g., Redis) for repeated requests  
+     - Partitioning/Sharding for large datasets  
+     - Connection pooling to handle traffic efficiently  
+
+---
+
+### API Security
+- **JWT Authentication** for secure user sessions.  
+- **Role-based access control (RBAC)** for different user permissions.  
+- **Input validation & sanitization** to prevent SQL Injection/XSS.  
+- **HTTPS/SSL** for encrypted communication.  
+
+---
+
+### CI/CD Pipeline
+- **Continuous Integration (CI):**  
+  - Runs automated tests (unit, integration).  
+  - Code linting and formatting checks.  
+
+- **Continuous Delivery/Deployment (CD):**  
+  - Deploys Dockerized application to **cloud environments**.  
+  - Supports **zero-downtime deployments**.  
+  - Rollback mechanism in case of failure.
