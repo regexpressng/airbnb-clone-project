@@ -66,3 +66,19 @@
 
     - #### Database Administrator
         - The Database administrator designs and manages the database.
+
+
+- ### Feature Breakdown
+    1. #### API Documentation
+
+    2. #### User Authentication
+
+    3. #### Property Management
+
+    4. #### Booking System
+
+    5. #### Payment Processing
+
+    6. #### Review System
+
+    7. #### Database Optimizations
