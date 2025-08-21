@@ -87,7 +87,7 @@
     7. #### Database Optimizations
 
         - Ensures the system is fast, scalable, and reliable.
-        -Includes:
+        - Includes:
             - Indexing for frequent queries
             - Caching (e.g., Redis) for repeated requests
             - Partitioning/Sharding for large datasets
